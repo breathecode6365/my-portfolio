@@ -37,7 +37,7 @@ const HeroCard = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="flex justify-between sp:items-center  sp:justify-center sn:items-center  sn:justify-center se:justify-center se:items-center flex-row se:w-screen  sp:w-screen  sp:mx-auto sn:w-screen  sn:mx-auto tabhor:w-[600px] 2xl:w-[900px] w-[800px] se:h-[250px] sp:h-[200px] sn:h-[200px] tabhor:h-[325px] 2xl:h-[500px] h-[400px] si:mx-auto si:w-screen sr:mx-auto sr:w-[900px]  sp:ml-0 sn:ml-0 se:mx-auto tabhor:ml-[290px] ml-[320px] shadow-xl text-center 2xl:ml-[450px]">
+      className="flex  sp:items-center overflow-hidden sp:justify-center sn:items-center  sn:justify-center se:justify-center se:items-center flex-row se:w-screen  sp:w-screen  sp:mx-auto sn:w-screen  sn:mx-auto tabhor:w-[600px] 2xl:w-[900px] w-[800px] se:h-[250px] sp:h-[200px] sn:h-[200px] tabhor:h-[325px] 2xl:h-[500px] h-[400px] si:mx-auto si:w-screen sr:mx-auto sr:w-[900px]  sp:ml-0 sn:ml-0 se:mx-auto tabhor:ml-[290px] ml-[320px] shadow-xl text-center 2xl:ml-[450px]">
       {showAbout ? (
         <button
           onClick={handleClick}
@@ -67,7 +67,7 @@ const HeroCard = () => {
               ? "twirl flex flex-col sp:mx-auto sn:mx-auto se:mx-auto se:items-center se:justify-center  sp:items-center sn:items-center se:p-3 sp:p-2 sn:p-2 p-10 "
               : "twirlout flex flex-col sp:mx-auto sn:mx-auto se:justify-center sp:justify-center sp:items-center sn:justify-center sn:items-center se:p-3 sp:p-2 sn:p-2 p-10 "
           }>
-          <div className="se:mx-auto flex flex-col sp:h-full sn:h-full se:h-full sp:justify-center sn:justify-center se:justify-center sp:items-center se:items-center  h-[300px] tabhor:mt-[50px] md:mt-[100px] text-left sp:text-center sn:text-center se:text-center ">
+          <div className="se:mx-auto flex flex-col w-max sp:h-full sn:h-full se:h-full sp:justify-center sn:justify-center se:justify-center sp:items-center se:items-center  h-[300px] tabhor:mt-[50px] md:mt-[100px] text-left sp:text-center sn:text-center se:text-center ">
             <span className="font-[800] sp:text-lg sn:text-lg se:text-lg  text-3xl 2xl:text-5xl">
               I&apos;m Punith Dandluri
             </span>
@@ -123,11 +123,11 @@ const HeroCard = () => {
           </div>
         </button>
       )}
-      <div className="flex justify-end pr-5  np:hidden sp:hidden sn:hidden se:hidden tabhor:max-w-[46%] ">
+      <div className="flex overflow-hidden  justify-end pr-5  np:hidden sp:hidden sn:hidden se:hidden ">
         <Image
           src={dp}
           alt="Hero Image"
-          className="h-auto right-0 w-[349px] 2xl:w-[349px] bottom-0"
+          className="h-auto w-auto flex-shrink-0 right-0 bottom-0"
         />
       </div>
     </div>

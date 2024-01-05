@@ -100,7 +100,7 @@ const Skills = () => {
       <span className="text-gray-600 si:w-screen si:text-center font-[700] text-lg sp:mx-auto sn:mx-auto se:mx-auto">
         Skills
       </span>
-      <div className="grid grid-cols-5 si:grid-cols-3 tabhor:grid-cols-4 sp:grid-cols-3  sn:grid-cols-3 p-2 se:grid-cols-3 tabhor:gap-3 gap-1 w-full mt-4 ">
+      <div className="grid grid-cols-5 si:grid-cols-4 tabhor:grid-cols-4 sp:grid-cols-3  sn:grid-cols-3 p-2 se:grid-cols-3 tabhor:gap-3 gap-1 w-full mt-4 ">
         {skillData.map((skill, index) => (
           <div
             key={index}
