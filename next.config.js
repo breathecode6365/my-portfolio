@@ -10,6 +10,7 @@ const nextConfig = {
       "codeforces.com"
     ],
   },
+  output: "export",
 };
 
 module.exports = nextConfig
