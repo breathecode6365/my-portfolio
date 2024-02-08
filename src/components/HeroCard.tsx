@@ -6,7 +6,11 @@ import CodeForces from "../../public/icons/codeforces.png";
 import leetcode from "../../public/icons/leetcodepng.png";
 import codechef from "../../public/icons/codechef.png";
 import { codeChefApiRes } from "@/types/ApiResType";
-import { RatingData, codeForcesApiResData, leetCodeApiResData } from "@/types/DataTypes";
+import {
+  RatingData,
+  codeForcesApiResData,
+  leetCodeApiResData,
+} from "@/types/DataTypes";
 import axios, { AxiosError, AxiosResponse } from "axios";
 import Spinner from "./Spinner";
 
@@ -93,7 +97,7 @@ const HeroCard = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="flex  sp:items-center sp:justify-center sn:items-center  sn:justify-center se:justify-center se:items-center flex-row se:w-screen  sp:w-screen  sp:mx-auto sn:w-screen  sn:mx-auto tabhor:w-[600px] 2xl:w-[900px] w-[800px] se:h-[250px] sp:h-[200px] sn:h-[200px] tabhor:h-[325px] 2xl:h-[500px] h-[400px] si:mx-auto si:w-screen sr:mx-auto sr:w-[900px]   se:mx-auto  shadow-xl text-center mx-auto ">
+      className="flex  sp:items-center sp:justify-center sn:items-center  sn:justify-center se:justify-center se:items-center flex-row se:w-screen  sp:w-screen  sp:mx-auto sn:w-screen  sn:mx-auto tabhor:w-[600px] 2xl:w-[925px] w-[800px] se:h-[250px] sp:h-[200px] sn:h-[200px] tabhor:h-[325px] 2xl:h-[500px] h-[400px] si:mx-auto si:w-screen sr:mx-auto sr:w-[900px]   se:mx-auto  shadow-xl text-center mx-auto 2xl:justify-between">
       {showAbout ? (
         <button
           onClick={handleClick}
@@ -101,7 +105,7 @@ const HeroCard = () => {
           className={
             showAbout
               ? "twirl w-[450px] 2xl:w-[500px] flex-shrink-0 px-4 "
-              : "twirlout flex-shrink-0 w-[450px] px-4"
+              : "twirlout"
           }>
           <p className="text-justify  2xl:text-lg  ">
             Punith is a self-motivated and passionate individual who has diverse
