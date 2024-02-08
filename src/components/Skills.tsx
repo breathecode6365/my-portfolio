@@ -96,11 +96,11 @@ const Skills = () => {
   ];
 
   return (
-    <div className="gap-1 py-[20px]   2xl:px-[30px]  2xl:py-[20px]  mt-2 flex flex-col items-start se:w-[100vw] sp:w-screen sn:w-screen sp:mx-auto sp:pl-4 sn:mx-auto sn:pl-4 tabhor:w-[650px] si:w-screen 2xl:w-[800px] w-[800px] se:h-[250px] sp:h-[200px] sn:h-[200px] tabhor:h-[325px]  si:mx-auto sr:mx-auto sr:w-[900px] sp:ml-0 sn:ml-0 se:mx-auto tabhor:ml-[290px] ml-[320px] 2xl:ml-[400px]">
+    <div className="gap-1 py-[20px]  2xl:py-[20px]  mt-2 flex flex-col items-start se:w-[100vw] sp:w-screen sn:w-screen sp:mx-auto sp:p-2 sn:mx-auto sn:pl-4 tabhor:w-[650px] si:w-screen 2xl:w-[900px] w-[800px] se:h-[250px] sp:h-[200px] sn:h-[200px] tabhor:h-[325px]  si:mx-auto sr:mx-auto sr:w-[900px] sp:ml-0 sn:ml-0 se:mx-auto tabhor:ml-[290px] mx-auto ">
       <span className="text-gray-600 si:w-screen si:text-center font-[700] text-lg sp:mx-auto sn:mx-auto se:mx-auto">
         Skills
       </span>
-      <div className="grid grid-cols-5 si:grid-cols-4 tabhor:grid-cols-4 sp:grid-cols-3  sn:grid-cols-3 p-2 se:grid-cols-3 tabhor:gap-3 gap-1 w-full mt-4 ">
+      <div className="grid grid-cols-5  si:grid-cols-4 tabhor:grid-cols-4 sp:grid-cols-3  sn:grid-cols-3  se:grid-cols-3 tabhor:gap-3 gap-1 w-full mt-4 ">
         {skillData.map((skill, index) => (
           <div
             key={index}

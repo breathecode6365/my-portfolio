@@ -33,9 +33,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-[#F0F0F6] ">
+      <body className="bg-[#F0F0F6]">
         <SideBar />
-        <Suspense  fallback={<Loading />}>{children}</Suspense>
+        <Suspense fallback={<Loading />}>{children}</Suspense>
       </body>
     </html>
   );

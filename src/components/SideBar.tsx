@@ -40,7 +40,7 @@ const SideBar = () => {
   }, []);
 
   return (
-    <section className="relative">
+    <section className="fixed">
       <button
         onClick={toggleSidebar}
         className="fixed p-5 lg:hidden z-50 bg-[#FF4A2E] rounded-[50%] top-2 right-2">
