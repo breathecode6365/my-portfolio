@@ -16,7 +16,7 @@ export default function Home() {
   if (loading) return <Loading />;
 
   return (
-    <main className="max-w-screen items-center xl:ml-20 md:min-h-screen overflow-hidden flex flex-col   ">
+    <main className="max-w-screen items-center xl:ml-20 md:min-h-screen overflow-x-hidden flex flex-col   ">
       <HeroCard />
       <ProfileCard />
       <Skills />
