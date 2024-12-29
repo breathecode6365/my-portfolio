@@ -11,15 +11,15 @@ import usericon from "../../public/icons/user.png";
 
 function ProfileCard() {
   return (
-    <section className="lg:fixed se:mx-auto lg:left-0 bg-white rounded-sm flex flex-col justify-center se:px-[70px] se:py-[30px] sp:px-[50px] sp:py-[30px] sn:px-[40px] sn:py-[20px] si:px-[100px] si:py-[50px] sr:px-[100px] sr:py-[50px] px-8 sp:w-screen sn:w-screen se:w-[100vw] si:w-screen si:mx-auto sr:w-[900px] sr:mx-auto  lg:w-[250px] 2xl:w-[300px] min-h-screen xl:h-screen ">
+    <section className="lg:fixed se:mx-auto lg:left-0  bg-white rounded-sm flex flex-col justify-center se:px-[70px] se:py-[30px] sp:px-[50px] sp:py-[30px] sn:px-[40px] sn:py-[20px] si:px-[100px] si:py-[50px] sr:px-[100px] sr:py-[50px] px-8 sp:w-screen sn:w-screen se:w-[100vw] si:w-screen si:mx-auto sr:w-[900px] sr:mx-auto  lg:w-[250px] 2xl:w-[300px] min-h-screen xl:h-screen ">
       <Image
-        className="mx-auto border-[2px] 2xl:border-[3px] border-[#FF4A2E] 2xl:w-[160px] 2xl:h-[160px] rounded-full p-1 2xl:p-2 si:w-[200px] si:h-[200px] sr:w-[250px] sr:h-[250px]"
+        className="mx-auto  border-[2px] 2xl:border-[3px] border-[#FF4A2E] 2xl:w-[160px] 2xl:h-[160px] rounded-full p-1 2xl:p-2 si:w-[200px] si:h-[200px] sr:w-[250px] sr:h-[250px]"
         src={dp}
         alt="dp"
         width={110}
         height={110}
       />
-      <div className="mt-[15px] 2xl:mt-[20px]  si:mt-[25px] sr:mt-[30px] flex flex-col gap-[10px] si:gap-[20px] sr:gap-[25px] text-center se:justify-center sp:justify-center sn:justify-center">
+      <div className="mt-[15px] 2xl:mt-[20px] xl:scale-95 si:mt-[25px] sr:mt-[30px] flex flex-col gap-[10px] si:gap-[20px] sr:gap-[25px] text-center se:justify-center sp:justify-center sn:justify-center">
         <div>
           <p className="font-[600]  text-[18px] si:text-2xl sr:text-3xl 2xl:text-3xl ">
             Punith Dandluri
@@ -95,7 +95,10 @@ function ProfileCard() {
               {" "}
               Age:{" "}
             </span>
-            <span className=" "> 19</span>
+            <span className=" ">
+              {" "}
+              {new Date().getFullYear() - new Date("2004-01-14").getFullYear()}
+            </span>
           </div>
           <div className="flex justify-between items-center">
             <span className="whitespace-pre  bg-[#FF4A2E] pl-1 pr-2 rounded-sm">
@@ -116,7 +119,11 @@ function ProfileCard() {
               {" "}
               Status:{" "}
             </span>
-            <span className="text-[#7EB942]"> Open to Work</span>
+            <span className="text-[#7EB942] flex-wrap"> Project Intern</span>
+          </div>
+          <div className="flex justify-between items-center">
+            <span className="whitespace-pre  bg-[#FF4A2E] pl-1 pr-2 rounded-sm"></span>
+            <span className="text-[#7EB942] flex-wrap -mt-3">@ORACLE</span>
           </div>
         </div>
         <hr />
@@ -140,11 +147,11 @@ function ProfileCard() {
           <div>
             <div className="flex flex-row justify-between">
               <span className=" text-sm  ">English</span>
-              <span className=" text-sm  ">Fluent</span>
+              <span className=" text-sm  ">Professional</span>
             </div>
             <div>
               <progress
-                value={90}
+                value={99}
                 max={100}
                 className="progress w-full rounded-sm"
               />
@@ -170,7 +177,7 @@ function ProfileCard() {
             </div>
             <div>
               <progress
-                value={45}
+                value={25}
                 max={100}
                 className="progress w-full rounded-sm"
               />

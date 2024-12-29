@@ -11,7 +11,7 @@ export type ProjectCardProps = {
 
 const ProjectCard = (props: ProjectCardProps) => {
   return (
-    <div className="flex mr-5 bg-white h-full sn:mx-auto shadow-lg rounded-md p-1 w-[350px] flex-shrink-0 sn:w-[260px] ">
+    <div className="flex mr-5 bg-white h-max sn:mx-auto shadow-lg rounded-md p-1 w-[350px] flex-shrink-0 sn:w-[260px] ">
       <div className=" flex flex-col border p-2 gap-2 ">
         <Image
           alt="project-image"

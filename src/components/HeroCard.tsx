@@ -70,8 +70,18 @@ const HeroCard = () => {
   useEffect(() => {
     const fetchRanking = async () => {
       const codeForce = await myApi.CodeforcesApi();
-      const codeChef = await axios.get("/api/data");
-      const data: number = codeChef.data;
+      const codeChef = await axios
+        .get("/api/data")
+        .then((res) => {
+          console.log(res.data, "API response data");
+          return res.data;
+        })
+        .catch((err) => {
+          console.log(err);
+          return 0;
+        });
+      console.log("Codechef", codeChef);
+      const data = codeChef?.ranking || 0;
       const leetCode = await myApi.LeetcodeApi();
       setStableData({
         leetCode: leetCode,
@@ -89,6 +99,18 @@ const HeroCard = () => {
       return () => clearTimeout(timer);
     }
   }, [showAbout, setShowAbout]);
+  const tagLines = [
+    "Aspiring SDE",
+    "Full-Stack Web Developer",
+    "Newbie Competitive Programmer",
+  ];
+  const [tagLineIndex, setTagLineIndex] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTagLineIndex((tagLineIndex + 1) % tagLines.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [tagLineIndex]);
 
   return (
     <div
@@ -109,13 +131,12 @@ const HeroCard = () => {
           }>
           <p className="text-justify  2xl:text-lg  ">
             Punith is a self-motivated and passionate individual who has diverse
-            skills in UI/UX Design, Web Development, and Competitive
+            skills in Full Stack Web Development, a beginner in Competitive
             Programming. He is a quick learner and a team player who is always
-            ready to learn new things and work on challenging projects. He is
-            passionate about Artificial Intelligence and Machine Learning. He
-            enjoys research and development in the field of AI and ML. He is a
-            good team player and a quick learner. He is always ready to learn
-            new things and work on challenging projects.
+            ready to learn new things and work on challenging projects. Dreaming
+            to become a SDE, who can code clean, develop scalable applications,
+            and solve real-world problems. He enjoys research and development
+            while working on solution.
           </p>
         </button>
       ) : (
@@ -133,8 +154,13 @@ const HeroCard = () => {
             </span>
             <div id="dynamic-text">
               <span className="font-[800] sp:text-sm sn:text-sm se:text-sm text-xl 2xl:text-2xl">
-                Aspiring{" "}
-                <span className="text-[#ff4a2e] "> AI Research Scientist</span>
+                {tagLines[tagLineIndex].split(" ")[0]}{" "}
+                <span className="text-[#ff4a2e] ">
+                  {tagLines[tagLineIndex].replace(
+                    tagLines[tagLineIndex].split(" ")[0],
+                    ""
+                  )}
+                </span>
               </span>
             </div>
           </div>

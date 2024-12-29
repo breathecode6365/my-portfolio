@@ -9,11 +9,6 @@ const Skills = () => {
       level: "Intermediate",
     },
     {
-      name: "Python",
-      img: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
-      level: "Intermediate",
-    },
-    {
       name: "Java",
       img: "https://cdn.worldvectorlogo.com/logos/java.svg",
       level: "Intermediate",
@@ -24,10 +19,21 @@ const Skills = () => {
       level: "Intermediate",
     },
     {
+      name: "Python",
+      img: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
+      level: "beginner",
+    },
+    {
       name: "Next JS",
       img: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
       level: "Intermediate",
     },
+
+    // {
+    //   name: "Nest JS",
+    //   img: "https://static-00.iconduck.com/assets.00/nestjs-icon-512x510-9nvpcyc3.png",
+    //   level: "Beginner",
+    // },
     {
       name: "Tailwind CSS",
       img: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg",
@@ -55,10 +61,19 @@ const Skills = () => {
     },
     {
       name: "MySQL",
-      img: "https://cdn.worldvectorlogo.com/logos/mysql-6.svg",
+      img: "https://cdn.worldvectorlogo.com/logos/mysql-logo-pure.svg",
       level: "Intermediate",
     },
-
+    {
+      name: "Langchain",
+      img: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/langchain-color.png",
+      level: "Beginner",
+    },
+    {
+      name: "Docker",
+      img: "https://cdn.worldvectorlogo.com/logos/docker-4.svg",
+      level: "Beginner",
+    },
     {
       name: "Figma",
       img: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
